@@ -5,5 +5,12 @@ public record User(Long id,
                    String email,
                    String password,
                    Boolean isAdmin) {
+    @Override
+    public Boolean isAdmin() {
+        return isAdmin;
+    }
 
+    public String getPassword(){
+        return password;
+    }
 }
